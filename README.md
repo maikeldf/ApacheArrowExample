@@ -8,3 +8,9 @@ pip install pandas<br>
 pip install numpy<br>
 
 
+
+<br>Results:<br>
+
+Conversion time of Pandas DataFrames to Spark DataFrames: 7.34s<br>
+Conversion time of Pandas DataFrames to Spark DataFrames **using PyArrow**: 0.09s
+
