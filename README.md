@@ -3,7 +3,7 @@
 
 Dependencies:
 
-pip install pyarrow<br>
+pip install pyspark<br>
 pip install pandas<br>
 pip install numpy<br>
 
