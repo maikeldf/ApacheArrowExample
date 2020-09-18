@@ -14,7 +14,7 @@ pdf2 = pd.DataFrame(np.random.rand(100000, 3))
 start = time.time()
 spark.createDataFrame(pdf1)
 end = time.time()
-print("Conversion time of Pandas DataFrames to Spark DataFrames:", end - start)
+print("\nConversion time of Pandas DataFrames to Spark DataFrames: {:.2f}s\n".format(end - start))
 
 # Using PyArrow in Spark to optimize the above Conversion
 
@@ -24,4 +24,4 @@ spark.conf.set("spark.sql.execution.arrow.enabled", "true")
 start = time.time()
 df2 = spark.createDataFrame(pdf2)
 end = time.time()
-print("Conversion time of Pandas DataFrames to Spark DataFrames using PyArrow:", end - start)
+print("\nConversion time of Pandas DataFrames to Spark DataFrames using PyArrow: {:.2f}s\n".format(end - start))
